@@ -13,29 +13,30 @@
     <link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div id="hero">
+    <div id="header">
             <nav>
                 <a href="#" class="logo">Developer</a>
-                <ul class="navlist">
-                   <li><a href="#" class="active">Home</a></li>
-                   <li><a href="#">About</a></li>
-                   <li><a href="#">Services</a></li>
-                   <li><a href="#">Portfolio</a></li>
-                   <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                   <li><a href="#header">Home</a></li>
+                   <li><a href="#about">About</a></li> 
+                   <li><a href="#services">Services</a></li>
+                   <li><a href="#portfolio">Portfolio</a></li>
+                   <li><a href="#contact">Contact</a></li>
+                   <i class="fas fa-times" onclick="closemenu()"></i>
                </ul>
+               <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="detail">
                 <h4>Hi, There!</h4>
-                <h1>I am <span>Shubhangi Jalake</span></h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipemo neque nulla Lorem ipsum dolor<br> sit amet consectetur
-                     adipisicing elit.<br> Dolorum laborum perferendis maiores culpa repudiandae doloremque <br>cum pariatur? 
-                     Aliquid maximesimilique ipsa voluptatem voluptates porro eum ex facilis <br>dolores nisi qui! exercitationem</p>
-                <a href="#" class="btn">Hire me</a>
-                <a href="#" class="btn btn2">Download CV</a>
+                <h2>I am <span>Shubhangi Jalake</span></h2>
+                <p>This is my official portfolio website to shows all details <br>and work experience in web development</p>
+                <!-- <a href="#" class="btn">Hire me</a> -->
+                <!-- <a href="#" class="btn btn2">Download CV</a> -->
+                <div class="images">
+                 <img src="background.jpg" alt="profile">
+                </div>
             </div>
-            <div class="images">
-                 <img src="background.jpg">
-            </div>
+            
     </div>
     <!-- about -->
     <div id="about">
@@ -46,9 +47,8 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore laborum, expedita dolore, 
-                        asperiores a earum sequi debitis unde ab suscipit dolorum recusandae, 
-                        facere temporibus? Eos enim possimus officiis ipsum officia!</p>
+                    <p>I am a full stack developer.I am very passionate about improving my coding skills and<br>
+                    developing websites.</p>
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('Experience')">Experience</p>
@@ -57,6 +57,12 @@
                         <div class="tab-contents active-tab" id="Skills">
                             <ul>
                                 <li><span>Web Development</span><br>Designing Web/App Interfaces</li>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                    <li>Node.js</li>
+                                </ul>
                             </ul>
                         </div>
                         <div class="tab-contents" id="Experience">
@@ -83,25 +89,21 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>front-end development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita 
-                        placeat at est, <br>necessitatibus animi adipisci sit eius obcaecati inventore eveniet 
-                        maiores<br> voluptatem maxime ducimus reprehenderit ipsum debitis. Iure, tempora!</p>
+                    <p>creating the user interface and user experience of a website or web application. <br>
+                        It's all about what users see and interact with directly.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-crop-simple"></i>
                     <h2>Backend development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita 
-                        placeat at est, <br>necessitatibus animi adipisci sit eius obcaecati inventore eveniet 
-                        maiores<br> voluptatem maxime ducimus reprehenderit ipsum debitis. Iure, tempora!</p>
+                    <p>Learning to build the backend logic, manage databases, and create robust APIs that power mpdern ewb application<br>
+                    and excited to dive into the server-side of web applications</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-database"></i>
                     <h2>Database</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut expedita 
-                        placeat at est, <br>necessitatibus animi adipisci sit eius obcaecati inventore eveniet 
-                        maiores<br> voluptatem maxime ducimus reprehenderit ipsum debitis. Iure, tempora!</p>
+                    <p>SQL and Mangodb</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
@@ -114,38 +116,85 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="work-1.png">
+                    <img  class="list"  src="work-1.jpg">
                     <div class="layer">
-                        <h3>Music website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex a iste dolorem sequi saepe quisquam
-                             exercitationem laboriosam libero. Tempore natus iusto et quae velit odit! Illo non adipisci hic v
-                             oluptatum.</p>
+                        <h3>To do-list</h3>
+                        <p>Using HTML, CSS and Javascript<br>
+                        Todo lists are the lists that we generally use to maintain our day-to-day tasks or <br>
+                    list of everything that we have to do. it is helpful in planning our daily schedules</p>
                          <a href="#" ><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
                     <img src="work-2.png">
                     <div class="layer">
-                        <h3>Photography page</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex a iste dolorem sequi saepe quisquam
-                             exercitationem laboriosam libero. Tempore natus iusto et quae velit odit! Illo non adipisci hic v
-                             oluptatum.</p>
+                        <h3>Music website</h3>
+                        <p>In this project, we are going to make a website that will play/pause<br>
+                        music using HTML, CSS and Javascript.</p>
                          <a href="#" ><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="work-3.png">
+                    <img class="simon" src="work-3.jpg">
                     <div class="layer">
                         <h2>Simon game</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex a iste dolorem sequi saepe quisquam
-                             exercitationem laboriosam libero. Tempore natus iusto et quae velit odit! Illo non adipisci hic v
-                             oluptatum.</p>
+                        <p>Simon game is a game of short-term memory skill that creates a series of tones and lights<br>
+                        and requires a user to repeat the sequence</p>
                          <a href="#" ><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
+            <a href="#" class="btn">see more</a>
         </div>
     </div>
+    <!-- contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>shubhangijalake123@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>7841981295</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="ShubhangiJalake_CV.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6"   placeholder=" Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ 2023 by Shubhangi.<i class=" fas fa-heart"></i> All Rights Reserved</p>
+        </div>
+    </div>
+        
        <script src="project app.js"></script>
+       <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzd9H5SZwnpvG83e5vy3txcrKxo0ZM7TBYrXQrc80Kn3rqrgM2t7qsXMu_9CTgIrD0-/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=" "
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>
